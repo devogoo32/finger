@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar__button {
+  color: #000;
+  font-size: 18px;
+  background-color: #ddd;
+  padding: 7px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
