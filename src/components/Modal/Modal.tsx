@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import "./Modal.css";
 
 type ModalProps = {
   setIsModalOpen: (arg: boolean) => void;
@@ -11,9 +12,9 @@ function Modal({ setIsModalOpen }: ModalProps) {
   };
 
   return (
-    <div>
+    <div className="modal">
       <div onClick={handleClose}>
-        <FontAwesomeIcon icon={faXmark} />
+        <FontAwesomeIcon className="modal__icon" icon={faXmark} size="xl" />
       </div>
     </div>
   );
