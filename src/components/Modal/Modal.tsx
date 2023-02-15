@@ -14,8 +14,8 @@ function Modal({ setIsModalOpen }: ModalProps) {
 
   return (
     <div className="modal">
-      <div onClick={handleClose}>
-        <FontAwesomeIcon className="modal__icon" icon={faXmark} size="xl" />
+      <div className="modal__icon" onClick={handleClose}>
+        <FontAwesomeIcon icon={faXmark} size="xl" />
       </div>
       <h2 className="modal__title">Get started</h2>
       <p className="modal__prompt">
@@ -24,7 +24,9 @@ function Modal({ setIsModalOpen }: ModalProps) {
         dating app for fictional characters. Swipe your way through the most
         imaginative and exciting profiles to find your perfect match.
       </p>
+      <h3>Show me: </h3>
       <RadioButtonGroup />
+      <button className="finger-button modal__button">Start</button>
     </div>
   );
 }
