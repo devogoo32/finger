@@ -16,6 +16,13 @@ function Modal({ setIsModalOpen }: ModalProps) {
       <div onClick={handleClose}>
         <FontAwesomeIcon className="modal__icon" icon={faXmark} size="xl" />
       </div>
+      <h2 className="modal__title">Get started</h2>
+      <p className="modal__prompt">
+        Welcome to the fictional world! Even in a world of fantasy, love is
+        still in the air. That's where "Finger" comes in, the most popular
+        dating app for fictional characters. Swipe your way through the most
+        imaginative and exciting profiles to find your perfect match.
+      </p>
     </div>
   );
 }
