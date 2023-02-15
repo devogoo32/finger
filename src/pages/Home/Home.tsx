@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar setIsModalOpen={setIsModalOpen} />
       <div className="home">
         <h1>Swipe Right</h1>
         <button className="finger-button" onClick={handleClick}>
