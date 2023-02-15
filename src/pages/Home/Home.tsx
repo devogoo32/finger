@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import "./Home.css";
 
 function Home() {
   const handleClick = () => {
@@ -10,7 +11,7 @@ function Home() {
       <Navbar />
       <div className="home">
         <h1>Swipe Right</h1>
-        <button onClick={handleClick}>Let's Play</button>
+        <button className="finger-button" onClick={handleClick}>Let's Play</button>
       </div>
     </>
   );
