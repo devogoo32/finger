@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import RadioButtonGroup from "../RadioButtonGroup/RadioButtonGroup";
 import "./Modal.css";
 
 type ModalProps = {
@@ -23,6 +24,7 @@ function Modal({ setIsModalOpen }: ModalProps) {
         dating app for fictional characters. Swipe your way through the most
         imaginative and exciting profiles to find your perfect match.
       </p>
+      <RadioButtonGroup />
     </div>
   );
 }
