@@ -1,0 +1,5 @@
+.sidebar {
+  flex: 0.3;
+  border-right: 1px solid #000;
+  max-width: 350px;
+}
