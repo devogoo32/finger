@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import RadioButtonGroup from "../RadioButtonGroup/RadioButtonGroup";
 import "./Modal.css";
+import { Link } from "react-router-dom";
 
 type ModalProps = {
   setIsModalOpen: (arg: boolean) => void;
@@ -26,7 +27,9 @@ function Modal({ setIsModalOpen }: ModalProps) {
       </p>
       <h3>Show me: </h3>
       <RadioButtonGroup />
-      <button className="finger-button modal__button">Start</button>
+      <Link to="dashboard">
+        <button className="finger-button modal__button">Start</button>
+      </Link>
     </div>
   );
 }
