@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TinderCard from "react-tinder-card";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Dashboard.css";
@@ -20,11 +19,6 @@ const db = [
 
 function Dashboard() {
   const characters = db;
-  const [lastDirection, setLastDirection] = useState();
-
-  const swiped = (direction, nameToDelete) => {
-    setLastDirection(direction);
-  };
 
   return (
     <div className="dashboard">
@@ -32,11 +26,7 @@ function Dashboard() {
       <div className="dashboard__container">
         <div className="cards">
           {characters.map((character) => (
-            <TinderCard
-              className="swipe"
-              key={character.name}
-              onSwipe={(dir) => swiped(dir, character.name)}
-            >
+            <TinderCard className="swipe" key={character.name}>
               <div
                 style={{ backgroundImage: "url(" + character.url + ")" }}
                 className="card"
