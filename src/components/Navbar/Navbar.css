@@ -7,8 +7,9 @@
 .navbar__button {
   color: #000;
   font-size: 18px;
-  background-color: #ddd;
+  background-color: #fff;
   padding: 7px 30px;
+  margin: 10px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
