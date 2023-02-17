@@ -15,7 +15,7 @@ function Modal({ setIsModalOpen }: ModalProps) {
   return (
     <div className="modal">
       <div className="modal__icon" onClick={handleClose}>
-        <FontAwesomeIcon icon={faXmark} size="xl" />
+        <FontAwesomeIcon className="icon" icon={faXmark} size="xl" />
       </div>
       <h2 className="modal__title">Get started</h2>
       <p className="modal__prompt">
