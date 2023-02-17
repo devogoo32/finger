@@ -12,13 +12,15 @@ function Home() {
 
   return (
     <>
-      <Navbar setIsModalOpen={setIsModalOpen} />
       <div className="home">
-        <h1>Swipe Right</h1>
-        <button className="finger-button" onClick={handleClick}>
-          Let's Play
-        </button>
-        {isModalOpen && <Modal setIsModalOpen={setIsModalOpen} />}
+        <Navbar setIsModalOpen={setIsModalOpen} />
+        <div className="home__content">
+          <h1 className="home__title">Swipe Right</h1>
+          <button className="finger-button" onClick={handleClick}>
+            Let's Play
+          </button>
+          {isModalOpen && <Modal setIsModalOpen={setIsModalOpen} />}
+        </div>
       </div>
     </>
   );
