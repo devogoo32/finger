@@ -2,7 +2,7 @@ import "./Controls.css";
 
 function Controls() {
   return (
-    <div>Controls</div>
+    <div className="controls">Controls</div>
   )
 }
 
