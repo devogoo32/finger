@@ -19,6 +19,7 @@
   padding: 10px 20px;
   font-size: 14px;
   color: #fe3072;
+  border-bottom: 2px solid #F1F4F5;
 }
 
 .sidebar__counter {
