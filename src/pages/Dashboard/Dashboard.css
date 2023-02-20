@@ -10,31 +10,3 @@
 .dashboard__container {
   flex: 0.7;
 }
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.card {
-  cursor: grab;
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.25);
-  width: 80vw;
-  max-width: 500px;
-  height: 600px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-}
-
-.card h3 {
-  position: absolute;
-  bottom: 0;
-  margin: 10px;
-  color: #fff;
-}

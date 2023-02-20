@@ -10,6 +10,7 @@ function Sidebar() {
         <h3>Matches</h3>
         <div className="sidebar__counter">3</div>
       </div>
+      
     </div>
   );
 }
