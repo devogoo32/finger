@@ -4,9 +4,16 @@
 
 .dashboard {
   display: flex;
-  background-color: #F3FAFC;
+  background-color: #f3fafc;
+  height: 100vh;
 }
 
 .dashboard__container {
   flex: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard__container {
+    flex: 1;
+  }
 }
