@@ -1,17 +1,31 @@
 .sidebar {
   flex: 0.3;
   background-color: #fff;
-  border-right: 2px solid #F1F4F5;
+  border-right: 2px solid #f1f4f5;
   max-width: 350px;
   z-index: 99;
 }
 
 .sidebar__header {
   background: linear-gradient(45deg, #fe3072, #ff5948);
-  border-bottom: 2px solid #F1F4F5;
+  border-bottom: 2px solid #f1f4f5;
   color: #fff;
   padding: 10px 20px;
   font-size: 14px;
+  position: relative;
+}
+
+.sidebar__toggle {
+  background-color: #ff5948;
+  border: 2px solid #f1f4f5;
+  border-radius: 50%;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 62px;
+  right: -15px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .sidebar__subheader {
@@ -19,7 +33,7 @@
   padding: 10px 20px;
   font-size: 14px;
   color: #fe3072;
-  border-bottom: 2px solid #F1F4F5;
+  border-bottom: 2px solid #f1f4f5;
 }
 
 .sidebar__counter {
@@ -33,7 +47,7 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 769px) {
   .sidebar {
     display: none;
   }

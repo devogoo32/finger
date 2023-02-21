@@ -1,4 +1,5 @@
 import Match from "../Match/Match";
+import ArrowRightSLineIcon from "remixicon-react/ArrowRightSLineIcon";
 import "./Sidebar.css";
 
 const characters = [
@@ -17,6 +18,9 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__header">
         <h1>Finger</h1>
+        <div className="sidebar__toggle">
+          <ArrowRightSLineIcon size={25} />
+        </div>
       </div>
       <div className="sidebar__subheader">
         <h3>Matches</h3>
