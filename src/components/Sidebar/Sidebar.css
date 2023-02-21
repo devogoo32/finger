@@ -12,20 +12,22 @@
   color: #fff;
   padding: 10px 20px;
   font-size: 14px;
-  position: relative;
 }
 
-.sidebar__toggle {
-  background-color: #ff5948;
-  border: 2px solid #f1f4f5;
-  border-radius: 50%;
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  border-radius: 5px;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 62px;
-  right: -15px;
-  text-align: center;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  top: 5px;
+  left: 5px;
   cursor: pointer;
+  display: none;
 }
 
 .sidebar__subheader {
@@ -50,5 +52,9 @@
 @media only screen and (max-width: 769px) {
   .sidebar {
     display: none;
+  }
+
+  .toggle {
+    display: flex;
   }
 }
