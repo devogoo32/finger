@@ -1,7 +1,7 @@
-import { createRef, useEffect, useMemo, useRef, useState } from "react";
-import TinderCard from "react-tinder-card";
+import { createRef, useMemo, useRef, useState } from "react";
 import { characters } from "../../utils/data";
 import Controls from "../Controls/Controls";
+import Card from "../Card/Card";
 import "./Cards.css";
 
 function Cards() {
@@ -38,23 +38,12 @@ function Cards() {
     <>
       <div className="cards">
         {characters.map((character, index) => (
-          <TinderCard
-            className="swipe"
-            ref={childRefs[index]}
-            preventSwipe={["up", "down"]}
-            onSwipe={(dir) => swiped(dir, index)}
-            key={character.name}
-          >
-            <div
-              style={{ backgroundImage: "url(" + character.url + ")" }}
-              className="card"
-            >
-              <div className="card__info">
-                <h2>{character.name}</h2>
-                <p>{character.bio}</p>
-              </div>
-            </div>
-          </TinderCard>
+          <Card
+            index={index}
+            character={character}
+            childRefs={childRefs}
+            swiped={swiped}
+          />
         ))}
       </div>
       <Controls
