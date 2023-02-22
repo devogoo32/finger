@@ -8,8 +8,6 @@ type CardProps = {
 };
 
 function Card({ character, index, childRefs, swiped }: CardProps) {
-  console.log("CARD")
-
   return (
     <TinderCard
       className="swipe"

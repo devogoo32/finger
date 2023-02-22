@@ -20,8 +20,8 @@ function Sidebar() {
           <div className="sidebar__counter">3</div>
         </div>
         <div className="sidebar__matches">
-          {characters.map((match) => (
-            <Match image={match.url} name={match.name} />
+          {characters.map((character) => (
+            <Match key={character.id} image={character.url} name={character.name} />
           ))}
         </div>
       </div>

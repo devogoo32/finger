@@ -39,6 +39,7 @@ function Cards() {
       <div className="cards">
         {characters.map((character, index) => (
           <Card
+            key={character.id}
             index={index}
             character={character}
             childRefs={childRefs}
