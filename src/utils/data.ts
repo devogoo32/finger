@@ -34,8 +34,32 @@ export const menCharacters = [
 export const womenCharacter = [
   {
     id: 0,
-    name: "Monica Hall",
-    url: "https://s1.r29static.com/bin/entry/006/x,80/1945796/image.jpg",
-    bio: "Lorem ipsum",
+    name: "Daenerys Targaryen",
+    url: "src/assets/daenerys.png",
+    bio: "I am Daenerys Stormborn of the House Targaryen, First of Her Name, the Unburnt, Queen of the Andals and the First Men, Khaleesi of the Great Grass Sea, Breaker of Chains, and Mother of Dragons.",
+  },
+  {
+    id: 1,
+    name: "Meredith Gray",
+    url: "src/assets/meredith.png",
+    bio: "I know my way around a heart (literally), but I'm still trying to figure out this whole dating thing.",
+  },
+  {
+    id: 2,
+    name: "Michonne Hawthorne",
+    url: "src/assets/michonne.png",
+    bio: "I may look tough on the outside, but I'm a softie at heart. Swipe right if you're looking for someone who can kick butt and cuddle.",
+  },
+  {
+    id: 3,
+    name: "Samara Morgan",
+    url: "src/assets/samara.png",
+    bio: "If you're looking for someone who can give you goosebumps with just one phone call, swipe right.",
+  },
+  {
+    id: 4,
+    name: "Eleanor Shellstrop",
+    url: "src/assets/eleanor.png",
+    bio: "I may not be a saint, but I'm not exactly a demon either."
   },
 ];
