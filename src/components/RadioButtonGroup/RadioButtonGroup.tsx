@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import { useRecoilState } from "recoil";
+import { genderState } from "../../recoil/atoms";
 import "./RadioButtonGroup.css";
 
 function RadioButtonGroup() {
-  const [selectedOption, setSelectedOption] = useState("men");
+  const [gender, setGender] = useRecoilState(genderState);
+  const [_, setSelectedOption] = useState("men");
 
   const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(e.target.value);
+    setGender(e.target.value);
   };
 
   return (
@@ -15,7 +19,7 @@ function RadioButtonGroup() {
         id="men"
         name="genre"
         value="men"
-        checked={selectedOption === "men"}
+        checked={gender === "men"}
         onChange={handleOptionChange}
       />
       <label htmlFor="men" className="radio-button">
@@ -26,7 +30,7 @@ function RadioButtonGroup() {
         id="women"
         name="genre"
         value="women"
-        checked={selectedOption === "women"}
+        checked={gender === "women"}
         onChange={handleOptionChange}
       />
       <label htmlFor="women" className="radio-button">

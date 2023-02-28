@@ -1,14 +1,18 @@
 import { createRef, useMemo, useRef, useState } from "react";
-import { characters } from "../../utils/data";
+import { useRecoilState } from "recoil";
+import { genderState } from "../../recoil/atoms";
+import { menCharacters, womenCharacter } from "../../utils/data";
 import Controls from "../Controls/Controls";
 import Card from "../Card/Card";
 import "./Cards.css";
 
 function Cards() {
+  const [gender, setGender] = useRecoilState(genderState);
+  const characters = gender === "men" ? menCharacters : womenCharacter;
   const [currentIndex, setCurrentIndex] = useState(characters.length - 1);
   const [lastDirection, setLastDirection] = useState("");
-  const canSwipe = currentIndex >= 0;
   const currentIndexRef = useRef(currentIndex);
+  const canSwipe = currentIndex >= 0;
 
   const updateCurrentIndex = (val: number) => {
     setCurrentIndex(val);
