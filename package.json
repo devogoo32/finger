@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
     "react-tinder-card": "^1.6.2",
+    "recoil": "^0.7.6",
     "remixicon-react": "^1.0.0"
   },
   "devDependencies": {
