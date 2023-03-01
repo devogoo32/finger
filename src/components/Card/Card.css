@@ -1,0 +1,47 @@
+
+.card {
+  cursor: grab;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 hsla(0, 0%, 0%, 0.25);
+  width: 400px;
+  max-width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card__info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.card__name {
+  font-size: 28px;
+}
+
+.card__bio {
+  margin-top: 10px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 769px) {
+  .card {
+    width: 90vw;
+  }
+}
