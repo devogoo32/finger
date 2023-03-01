@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import RadioButtonGroup from "../RadioButtonGroup/RadioButtonGroup";
 import "./Modal.css";
-import { Link } from "react-router-dom";
 
 type ModalProps = {
   setIsModalOpen: (arg: boolean) => void;

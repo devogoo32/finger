@@ -1,14 +1,13 @@
 import { createRef, useMemo, useRef, useState } from "react";
-import { useRecoilState } from "recoil";
-import { genderState } from "../../recoil/atoms";
-import { menCharacters, womenCharacter } from "../../utils/data";
 import Controls from "../Controls/Controls";
 import Card from "../Card/Card";
 import "./Cards.css";
 
-function Cards() {
-  const [gender, setGender] = useRecoilState(genderState);
-  const characters = gender === "men" ? menCharacters : womenCharacter;
+type CardsProps = {
+  characters: Character[];
+};
+
+function Cards({ characters }: CardsProps) {
   const [currentIndex, setCurrentIndex] = useState(characters.length - 1);
   const [lastDirection, setLastDirection] = useState("");
   const currentIndexRef = useRef(currentIndex);

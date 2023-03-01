@@ -1,9 +1,11 @@
 import Match from "../Match/Match";
-import MenuFillIcon from "remixicon-react/MenuFillIcon";
-import { characters } from "../../utils/data";
 import "./Sidebar.css";
 
-function Sidebar() {
+type SidebarProps = {
+  characters: Character[];
+};
+
+function Sidebar({ characters }: SidebarProps) {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
@@ -14,13 +16,17 @@ function Sidebar() {
         <div className="sidebar__counter">{characters.length}</div>
       </div>
       <div className="sidebar__matches">
-        {characters.map((character) => (
-          <Match
-            key={character.id}
-            image={character.url}
-            name={character.name}
-          />
-        ))}
+        {characters.map((character) => {
+          if (character.isMatch) {
+            return (
+              <Match
+                key={character.id}
+                image={character.url}
+                name={character.name}
+              />
+            );
+          }
+        })}
       </div>
     </div>
   );
