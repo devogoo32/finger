@@ -5,16 +5,14 @@ type CardProps = {
   character: Character;
   index: number;
   childRefs: any;
-  swiped: (direction: string, index: number) => void;
 };
 
-function Card({ character, index, childRefs, swiped }: CardProps) {
+function Card({ character, index, childRefs }: CardProps) {
   return (
     <TinderCard
       className="swipe"
       ref={childRefs[index]}
       preventSwipe={["up", "down"]}
-      onSwipe={(dir) => swiped(dir, index)}
       key={character.name}
     >
       <div

@@ -8,14 +8,16 @@ import "./Dashboard.css";
 
 function Dashboard() {
   const [gender] = useRecoilState(genderState);
-  const [characters, setCharacters] =
-    gender === "men" ? useState(menCharacters) : useState(womenCharacter);
+  const characters = gender === "men" ? menCharacters : womenCharacter;
+  const [matches, setMatches] = useState([]);
+
+  console.log(matches);
 
   return (
     <div className="dashboard">
-      <Sidebar characters={characters} />
+      <Sidebar characters={matches} />
       <div className="dashboard__container">
-        <Cards characters={characters} />
+        <Cards characters={characters} setMatches={setMatches} />
       </div>
     </div>
   );
