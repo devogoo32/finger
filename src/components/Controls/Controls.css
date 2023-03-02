@@ -24,3 +24,9 @@
 .controls .controls__button:nth-child(2) {
   color: #1be4a1;
 }
+
+@media only screen and (max-width: 769px) {
+  .controls {
+    display: none;
+  }
+}
