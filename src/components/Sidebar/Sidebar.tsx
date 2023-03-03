@@ -13,7 +13,7 @@ function Sidebar({ characters }: SidebarProps) {
       </div>
       <div className="sidebar__subheader">
         <h3>Matches</h3>
-        <div className="sidebar__counter">0</div>
+        <div className="sidebar__counter">{characters.length}</div>
       </div>
       <div className="sidebar__matches">
         {characters.map((character) => (

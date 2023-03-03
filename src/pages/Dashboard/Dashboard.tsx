@@ -11,8 +11,6 @@ function Dashboard() {
   const characters = gender === "men" ? menCharacters : womenCharacter;
   const [matches, setMatches] = useState([]);
 
-  console.log(matches);
-
   return (
     <div className="dashboard">
       <Sidebar characters={matches} />
