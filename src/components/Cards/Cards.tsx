@@ -33,6 +33,12 @@ function Cards({ characters, setMatches }: CardsProps) {
     updateCurrentIndex(index - 1);
   };
 
+  const swipe = async (dir: string) => {
+    if (canSwipe && currentIndex < characters.length) {
+      await childRefs[currentIndex].current.swipe(dir);
+    }
+  };
+
   useEffect(() => {
     if (lastDirection == "right" && getRandomNumber(1, 3) === 1) {
       setMatches((prevState: Character[]) => [
@@ -42,11 +48,18 @@ function Cards({ characters, setMatches }: CardsProps) {
     }
   }, [currentIndex]);
 
-  const swipe = async (dir: string) => {
-    if (canSwipe && currentIndex < characters.length) {
-      await childRefs[currentIndex].current.swipe(dir);
-    }
-  };
+  const handleKeyUp = (e: any) => {
+    if (e.key === "ArrowRight") swipe("right") 
+    if (e.key === "ArrowLeft") swipe("left") 
+  }
+
+  useEffect(() => {
+    window.addEventListener("keyup", handleKeyUp);
+
+    return () => {
+      window.removeEventListener("keyup", handleKeyUp);
+    };
+  }, [currentIndex]);
 
   return (
     <>
