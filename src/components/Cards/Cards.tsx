@@ -1,9 +1,8 @@
 import React, { useEffect, createRef, useMemo, useRef, useState } from "react";
-import Controls from "../Controls/Controls";
-import Card from "../Card/Card";
-import "./Cards.css";
-import { getRandomNumber } from "../../utils/helpers";
 import TinderCard from "react-tinder-card";
+import Controls from "../Controls/Controls";
+import { getRandomNumber } from "../../utils/helpers";
+import "./Cards.css";
 
 type CardsProps = {
   characters: Character[];

@@ -48,7 +48,7 @@
 }
 
 @media only screen and (max-width: 769px) {
-  .cards { 
+  .cards {
     height: 100vh;
   }
 
@@ -57,3 +57,8 @@
   }
 }
 
+@media only screen and (max-height: 769px) {
+  .cards {
+    height: 100vh;
+  }
+}

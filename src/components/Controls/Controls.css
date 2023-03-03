@@ -30,3 +30,9 @@
     display: none;
   }
 }
+
+@media only screen and (max-height: 769px) {
+  .controls {
+    display: none;
+  }
+}
