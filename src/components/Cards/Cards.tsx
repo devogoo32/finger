@@ -35,7 +35,7 @@ function Cards({ characters, setMatches }: CardsProps) {
   };
 
   useEffect(() => {
-    if (lastDirection == "right") {
+    if (lastDirection == "right" && getRandomNumber(1, 3) === 1) {
       setMatches((prevState: Character[]) => [
         characters[currentIndex + 1],
         ...prevState,
