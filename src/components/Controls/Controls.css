@@ -19,10 +19,22 @@
 
 .controls .controls__button:nth-child(1) {
   color: #fd5068;
+  transition: 0.3s;
+}
+
+.controls .controls__button:nth-child(1):hover {
+  background-color: #fd5068;
+  color: #fff;
 }
 
 .controls .controls__button:nth-child(2) {
   color: #1be4a1;
+  transition: 0.3s;
+}
+
+.controls .controls__button:nth-child(2):hover {
+  background-color: #1be4a1;
+  color: #fff;
 }
 
 @media only screen and (max-width: 769px) {
