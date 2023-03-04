@@ -1,3 +1,4 @@
+import logo from "../../assets/logo.png";
 import Match from "../Match/Match";
 import "./Sidebar.css";
 
@@ -9,7 +10,7 @@ function Sidebar({ characters }: SidebarProps) {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        <h1>Finger</h1>
+        <img className="logo" src={logo} alt="logo" />
       </div>
       <div className="sidebar__subheader">
         <h3>Matches</h3>
