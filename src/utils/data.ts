@@ -80,4 +80,22 @@ export const womenCharacter = [
     url: "src/assets/eleanor.png",
     bio: "I may not be a saint, but I'm not exactly a demon either.",
   },
+  {
+    id: 5,
+    name: "Minerva McGonagall",
+    url: "src/assets/minerva.png",
+    bio: "If you are a cat person, I'm your gal.",
+  },
+  {
+    id: 6,
+    name: "Lois Wilkerson",
+    url: "src/assets/lois.png",
+    bio: "Mother of five boys. We'll get along if you let me control your life and admit that I'm always right:)",
+  },
+  {
+    id: 7,
+    name: "Harley Quinn",
+    url: "src/assets/harley.png",
+    bio: "Not sure if I attract crazy or if I make them crazy.",
+  },
 ];
