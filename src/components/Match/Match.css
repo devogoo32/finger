@@ -3,6 +3,7 @@
   align-items: center;
   gap: 10px;
   padding: 10px;
+  transition: 0.3s;
 }
 
 .match:hover {
@@ -15,6 +16,7 @@
   height: 55px;
   object-fit: cover;
   border-radius: 50%;
+  object-position: top;
 }
 
 .match__name {
