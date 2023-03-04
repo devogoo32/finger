@@ -49,9 +49,9 @@ function Cards({ characters, setMatches }: CardsProps) {
   }, [currentIndex]);
 
   const handleKeyUp = (e: any) => {
-    if (e.key === "ArrowRight") swipe("right") 
-    if (e.key === "ArrowLeft") swipe("left") 
-  }
+    if (e.key === "ArrowRight") swipe("right");
+    if (e.key === "ArrowLeft") swipe("left");
+  };
 
   useEffect(() => {
     window.addEventListener("keyup", handleKeyUp);
@@ -83,6 +83,7 @@ function Cards({ characters, setMatches }: CardsProps) {
             </div>
           </TinderCard>
         ))}
+        <p>Made with ❤️ by Denilson Lemus</p>
       </div>
       <Controls
         swipeLeft={() => swipe("left")}
