@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <div className="home">
+      <div className={isModalOpen ? "home home--background" : "home"}>
         <Navbar setIsModalOpen={setIsModalOpen} />
         <div className="home__content">
           <h1 className="home__title">Swipe Right</h1>
