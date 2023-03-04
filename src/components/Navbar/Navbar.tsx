@@ -1,3 +1,4 @@
+import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 type NavbarProps = {
@@ -8,7 +9,7 @@ function Navbar({ setIsModalOpen }: NavbarProps) {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img className="logo" src="#" alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
       </div>
       <button className="navbar__button" onClick={() => setIsModalOpen(true)}>
         Log in
