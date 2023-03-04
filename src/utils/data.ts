@@ -29,6 +29,24 @@ export const menCharacters = [
     url: "src/assets/borat.png",
     bio: "Kazakh journalist and world traveler seeking partner for cultural exchange and sexy time.",
   },
+  {
+    id: 5,
+    name: "Joey Tribbiani",
+    url: "src/assets/joey.png",
+    bio: "Hey, How you doin'? I'm an actor and I speak French fluently. Let's go get food (I don't share).",
+  },
+  {
+    id: 6,
+    name: "Jason Voorhees",
+    url: "src/assets/jason.png",
+    bio: "Let's go on a date. I'm free Friday the 13th.",
+  },
+  {
+    id: 7,
+    name: "Darth Vader",
+    url: "src/assets/darth.png",
+    bio: "If you have a daddy or choking kink, I'm your guy. I have two kids (I hope that's not a deal breaker).",
+  },
 ];
 
 export const womenCharacter = [
