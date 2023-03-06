@@ -47,6 +47,24 @@ export const menCharacters = [
     url: "src/assets/characters/men/darth.png",
     bio: "If you have a daddy or choking kink, I'm your guy. I have two kids (I hope that's not a deal breaker).",
   },
+  {
+    id: 8,
+    name: "Willy Wonka",
+    url: "src/assets/characters/men/willy.png",
+    bio: "Factory owner seeking someone with a golden ticket to my heart. No Oompa Loompas please.",
+  },
+  {
+    id: 9,
+    name: "Walter White",
+    url: "src/assets/characters/men/walter.png",
+    bio: "Chemist by trade, but now looking for a partner in crime (figuratively speaking, of course).",
+  },
+  {
+    id: 10,
+    name: "Latrell Spencer",
+    url: "src/assets/characters/men/latrell.png",
+    bio: "Looking for someone who's not afraid to belt out 'A Thousand Miles' with me during car rides.",
+  },
 ];
 
 export const womenCharacter = [
