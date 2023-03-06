@@ -8,6 +8,23 @@
   height: 100vh;
 }
 
+.dashboard__toggle {
+  position: absolute;
+  background: linear-gradient(45deg, #fe3072, #ff5948);
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  left: 10px;
+  display: none;
+  z-index: 99;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
 .dashboard__container {
   flex: 0.7;
 }
@@ -15,5 +32,9 @@
 @media only screen and (max-width: 769px) {
   .dashboard__container {
     flex: 1;
+  }
+
+  .dashboard__toggle {
+    display: block;
   }
 }
