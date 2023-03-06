@@ -1,3 +1,5 @@
+import { useState } from "react";
+import FireFillIcon from "remixicon-react/FireFillIcon";
 import logo from "../../assets/logo.png";
 import Match from "../Match/Match";
 import "./Sidebar.css";
@@ -7,25 +9,36 @@ type SidebarProps = {
 };
 
 function Sidebar({ characters }: SidebarProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="sidebar">
-      <div className="sidebar__header">
-        <img className="logo" src={logo} alt="logo" />
+    <>
+      <button className="sidebar__toggle" onClick={handleClick}>
+        <FireFillIcon />
+      </button>
+      <div id={isOpen ? "open" : ""} className="sidebar">
+        <div className="sidebar__header">
+          <img className="logo" src={logo} alt="logo" />
+        </div>
+        <div className="sidebar__subheader">
+          <h3>Matches</h3>
+          <div className="sidebar__counter">{characters.length}</div>
+        </div>
+        <div className="sidebar__matches">
+          {characters.map((character) => (
+            <Match
+              key={character.id}
+              image={character.url}
+              name={character.name}
+            />
+          ))}
+        </div>
       </div>
-      <div className="sidebar__subheader">
-        <h3>Matches</h3>
-        <div className="sidebar__counter">{characters.length}</div>
-      </div>
-      <div className="sidebar__matches">
-        {characters.map((character) => (
-          <Match
-            key={character.id}
-            image={character.url}
-            name={character.name}
-          />
-        ))}
-      </div>
-    </div>
+    </>
   );
 }
 
