@@ -18,7 +18,7 @@
   position: absolute;
   background: linear-gradient(45deg, #fe3072, #ff5948);
   color: #fff;
-  border-radius: 7px;
+  border-radius: 50%;
   border: none;
   width: 40px;
   height: 40px;
@@ -30,6 +30,7 @@
   -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   display: none;
+  font-size: 18px;
 }
 
 .sidebar__header {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import FireFillIcon from "remixicon-react/FireFillIcon";
+import CloseFillIcon from "remixicon-react/CloseFillIcon";
 import logo from "../../assets/logo.png";
 import Match from "../Match/Match";
 import "./Sidebar.css";
@@ -18,7 +19,9 @@ function Sidebar({ characters }: SidebarProps) {
   return (
     <>
       <button className="sidebar__toggle" onClick={handleClick}>
-        <FireFillIcon />
+        {isOpen && <CloseFillIcon />}
+        {!isOpen && characters.length === 0 && <FireFillIcon />}
+        {!isOpen && characters.length > 0 && <span>+{characters.length}</span>}
       </button>
       <div id={isOpen ? "open" : ""} className="sidebar">
         <div className="sidebar__header">
