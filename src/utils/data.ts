@@ -116,4 +116,22 @@ export const womenCharacter = [
     url: "src/assets/characters/women/harley.png",
     bio: "Not sure if I attract crazy or if I make them crazy.",
   },
+  {
+    id: 8,
+    name: "Angela Martin",
+    url: "src/assets/characters/women/angela.png",
+    bio: "If you're looking for someone who's down to earth, funny, and relatable, you should probably swipe left. But if you're into cats, I'm your girl.",
+  },
+  {
+    id: 9,
+    name: "Gloria Delgado",
+    url: "src/assets/characters/women/gloria.png",
+    bio: "Not interested in anyone who takes themselves too seriously or doesn't know how to have fun. If you're down for some salsa dancing, margaritas, and a lot of laughter, let's match.",
+  },
+  {
+    id: 9,
+    name: "Hermione Granger",
+    url: "src/assets/characters/women/hermione.png",
+    bio: "If you're looking for someone who can cast a Patronus, solve a riddle, and still have time to discuss social justice issues, let's match. But be warned, I won't tolerate any Death Eater sympathizers or Slytherin elitists.",
+  },
 ];
