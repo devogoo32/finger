@@ -62,7 +62,7 @@ export const menCharacters = [
   {
     id: 10,
     name: "Latrell Spencer",
-    url: "src/assets/latrell.png",
+    url: "src/assets/characters/men/latrell.png",
     bio: "Looking for someone who's not afraid to belt out 'A Thousand Miles' with me during car rides.",
   },
 ];
