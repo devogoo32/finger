@@ -134,4 +134,16 @@ export const womenCharacter = [
     url: "src/assets/characters/women/hermione.png",
     bio: "If you're looking for someone who can cast a Patronus, solve a riddle, and still have time to discuss social justice issues, let's match. But be warned, I won't tolerate any Death Eater sympathizers or Slytherin elitists.",
   },
+  {
+    id: 11,
+    name: "Katniss Everdeen",
+    url: "src/assets/characters/women/katniss.png",
+    bio: "I'm Katniss, and I'm basically the Girl on Fire. When I'm not taking down tyrants and fighting for freedom, I enjoy reading, hiking, and trying new recipes. Looking for someone who can handle my strong will and my even stronger sense of humor.",
+  },
+  {
+    id: 12,
+    name: "Carly Shay",
+    url: "src/assets/characters/women/carly.png",
+    bio: "I'm Carly, and I'm a bit of a tech nerd. I love creating content, tinkering with gadgets, and making people laugh.",
+  },
 ];
