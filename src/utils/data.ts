@@ -65,6 +65,18 @@ export const menCharacters = [
     url: "src/assets/characters/men/latrell.png",
     bio: "Looking for someone who's not afraid to belt out 'A Thousand Miles' with me during car rides.",
   },
+  {
+    id: 11,
+    name: "Charlie Harper",
+    url: "src/assets/characters/men/charlie.png",
+    bio: "I never know what's going to happen next. I've been married, divorced, and engaged multiple times. But despite all that, I still believe in love, and I'm not giving up on finding my soulmate. Swipe right if you're ready for a little bit of chaos.",
+  },
+  {
+    id: 12,
+    name: "Buddy Hobbs",
+    url: "src/assets/characters/men/buddy.png",
+    bio: "Greetings, it's Buddy the Elf. I'm not your average elf, I'm 6'3. Looking for someone who won't judge me for eating spaghetti with maple syrup.",
+  },
 ];
 
 export const womenCharacter = [
