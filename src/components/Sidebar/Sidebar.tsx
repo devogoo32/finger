@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import FireFillIcon from "remixicon-react/FireFillIcon";
 import CloseFillIcon from "remixicon-react/CloseFillIcon";
+import ArrowLeftLineIcon from "remixicon-react/ArrowLeftLineIcon";
 import logo from "../../assets/logo.png";
 import Match from "../Match/Match";
 import "./Sidebar.css";
@@ -26,8 +27,10 @@ function Sidebar({ characters }: SidebarProps) {
       </button>
       <div id={isOpen ? "open" : ""} className="sidebar">
         <div className="sidebar__header">
-            <img className="logo" src={logo} alt="logo" />
-          
+          <Link to="/">
+            <ArrowLeftLineIcon />
+          </Link>
+          <img className="logo" src={logo} alt="logo" />
         </div>
         <div className="sidebar__subheader">
           <h3>Matches</h3>
