@@ -26,9 +26,8 @@ function Sidebar({ characters }: SidebarProps) {
       </button>
       <div id={isOpen ? "open" : ""} className="sidebar">
         <div className="sidebar__header">
-          <Link to="/">
             <img className="logo" src={logo} alt="logo" />
-          </Link>
+          
         </div>
         <div className="sidebar__subheader">
           <h3>Matches</h3>
