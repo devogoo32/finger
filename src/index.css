@@ -11,6 +11,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: #fff;
+}
+
 .finger-button {
   color: #fff;
   text-transform: uppercase;
