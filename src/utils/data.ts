@@ -77,6 +77,12 @@ export const menCharacters = [
     url: "src/assets/characters/men/buddy.png",
     bio: "Greetings, it's Buddy the Elf. I'm not your average elf, I'm 6'3. Looking for someone who won't judge me for eating spaghetti with maple syrup.",
   },
+  {
+    id: 13,
+    name: "Edward Scissorhands",
+    url: "src/assets/characters/men/edward.png",
+    bio: "Single and ready to carve my way into your heart. Seeking someone who can appreciate my unique talents and isn't afraid of a little sharpness. (I'm not a fan of holding hands, sorry)."
+  },
 ];
 
 export const womenCharacter = [
