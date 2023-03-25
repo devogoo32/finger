@@ -164,4 +164,10 @@ export const womenCharacter = [
     url: "src/assets/characters/women/carly.png",
     bio: "I'm Carly, and I'm a bit of a tech nerd. I love creating content, tinkering with gadgets, and making people laugh.",
   },
+  {
+    id: 13,
+    name: "Mary Jane",
+    url: "src/assets/characters/women/mary.png",
+    bio: "Looking for a guy who can keep up with my love for adventure... and won't get jealous if Spider-Man swings by for a visit.",
+  },
 ];
