@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import FireFillIcon from "remixicon-react/FireFillIcon";
 import CloseFillIcon from "remixicon-react/CloseFillIcon";
 import ArrowLeftLineIcon from "remixicon-react/ArrowLeftLineIcon";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 import Match from "../Match/Match";
 import "./Sidebar.css";
 
