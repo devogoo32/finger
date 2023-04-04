@@ -89,6 +89,12 @@ export const menCharacters = [
     url: "../assets/characters/men/morpheus.png",
     bio: "Swiping right on me is like taking the red pill, it'll open your eyes to a whole new world."
   },
+  {
+    id: 15,
+    name: "Elliot Alderson",
+    url: "../assets/characters/men/elliot.png",
+    bio: "I may have a split personality, but at least one of them is into you."
+  },
 ];
 
 export const womenCharacter = [
