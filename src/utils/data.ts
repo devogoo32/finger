@@ -176,4 +176,10 @@ export const womenCharacter = [
     url: "../assets/characters/women/mary.png",
     bio: "Looking for a guy who can keep up with my love for adventure... and won't get jealous if Spider-Man swings by for a visit.",
   },
+  {
+    id: 14,
+    name: "Miranda Priestley",
+    url: "../assets/characters/women/miranda.png",
+    bio: "I don't have time for mediocrity in the office, and I definitely don't have time for it in my love life. Swipe right if you think you can handle my high standards.",
+  },
 ];
