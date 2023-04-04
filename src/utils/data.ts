@@ -83,6 +83,12 @@ export const menCharacters = [
     url: "../assets/characters/men/edward.png",
     bio: "Single and ready to carve my way into your heart. Seeking someone who can appreciate my unique talents and isn't afraid of a little sharpness. (I'm not a fan of holding hands, sorry)."
   },
+  {
+    id: 14,
+    name: "Morpheus",
+    url: "../assets/characters/men/morpheus.png",
+    bio: "Swiping right on me is like taking the red pill, it'll open your eyes to a whole new world."
+  },
 ];
 
 export const womenCharacter = [
