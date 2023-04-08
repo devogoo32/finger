@@ -95,6 +95,12 @@ export const menCharacters = [
     url: "../assets/characters/men/elliot.png",
     bio: "I may have a split personality, but at least one of them is into you."
   },
+  {
+    id: 16,
+    name: "Dwight Schrute",
+    url: "../assets/characters/men/dwight.png",
+    bio: "Beet farmer, assistant regional manager, black belt in karate, volunteer sheriff's deputy, and martial arts enthusiast. Seeking a partner who can appreciate my love for beets, and Battlestar Galactica."
+  },
 ];
 
 export const womenCharacter = [
