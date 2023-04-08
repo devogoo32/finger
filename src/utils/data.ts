@@ -194,4 +194,10 @@ export const womenCharacter = [
     url: "../assets/characters/women/miranda.png",
     bio: "I don't have time for mediocrity in the office, and I definitely don't have time for it in my love life. Swipe right if you think you can handle my high standards.",
   },
+  {
+    id: 15,
+    name: "Jess Day",
+    url: "../assets/characters/women/jess.png",
+    bio: "Looking for someone who can handle my 'adorkable' personality, love for unicorns, and questionable dance moves. If you're up for singing duets with me and watching rom-coms, we might just be a match.",
+  },
 ];
