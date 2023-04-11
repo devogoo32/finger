@@ -1,5 +1,3 @@
-import dwight from "../assets/characters/men/dwight.png";
-
 export const menCharacters = [
   {
     id: 0,
@@ -100,7 +98,7 @@ export const menCharacters = [
   {
     id: 16,
     name: "Dwight Schrute",
-    url: dwight,
+    url: "../../public/assets/characters/men/dwight.png",
     bio: "Beet farmer, assistant regional manager, black belt in karate, volunteer sheriff's deputy, and martial arts enthusiast. Seeking a partner who can appreciate my love for beets, and Battlestar Galactica.",
   },
 ];
