@@ -1,3 +1,5 @@
+import dwight from "../assets/characters/men/dwight.png";
+
 export const menCharacters = [
   {
     id: 0,
@@ -81,25 +83,25 @@ export const menCharacters = [
     id: 13,
     name: "Edward Scissorhands",
     url: "../assets/characters/men/edward.png",
-    bio: "Single and ready to carve my way into your heart. Seeking someone who can appreciate my unique talents and isn't afraid of a little sharpness. (I'm not a fan of holding hands, sorry)."
+    bio: "Single and ready to carve my way into your heart. Seeking someone who can appreciate my unique talents and isn't afraid of a little sharpness. (I'm not a fan of holding hands, sorry).",
   },
   {
     id: 14,
     name: "Morpheus",
     url: "../assets/characters/men/morpheus.png",
-    bio: "Swiping right on me is like taking the red pill, it'll open your eyes to a whole new world."
+    bio: "Swiping right on me is like taking the red pill, it'll open your eyes to a whole new world.",
   },
   {
     id: 15,
     name: "Elliot Alderson",
     url: "../assets/characters/men/elliot.png",
-    bio: "I may have a split personality, but at least one of them is into you."
+    bio: "I may have a split personality, but at least one of them is into you.",
   },
   {
     id: 16,
     name: "Dwight Schrute",
-    url: "../assets/characters/men/dwight.png",
-    bio: "Beet farmer, assistant regional manager, black belt in karate, volunteer sheriff's deputy, and martial arts enthusiast. Seeking a partner who can appreciate my love for beets, and Battlestar Galactica."
+    url: dwight,
+    bio: "Beet farmer, assistant regional manager, black belt in karate, volunteer sheriff's deputy, and martial arts enthusiast. Seeking a partner who can appreciate my love for beets, and Battlestar Galactica.",
   },
 ];
 
