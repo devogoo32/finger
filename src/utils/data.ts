@@ -200,4 +200,10 @@ export const womenCharacter = [
     url: "../assets/characters/women/jess.png",
     bio: "Looking for someone who can handle my 'adorkable' personality, love for unicorns, and questionable dance moves. If you're up for singing duets with me and watching rom-coms, we might just be a match.",
   },
+  {
+    id: 16,
+    name: "Connie Tucker",
+    url: "../assets/characters/women/connie.png",
+    bio: "I may be old-fashioned, but I still know how to have a good time. Looking for a man who can keep up with my spunk and wit.",
+  },
 ];
