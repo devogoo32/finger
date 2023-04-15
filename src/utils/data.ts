@@ -101,6 +101,12 @@ export const menCharacters = [
     url: "../assets/characters/men/dwight.png",
     bio: "Beet farmer, assistant regional manager, black belt in karate, volunteer sheriff's deputy, and martial arts enthusiast. Seeking a partner who can appreciate my love for beets, and Battlestar Galactica.",
   },
+  {
+    id: 17,
+    name: "Gregory House",
+    url: "../assets/characters/men/house.png",
+    bio: "My cane is a conversation starter. Want to know the story behind it?",
+  },
 ];
 
 export const womenCharacter = [
