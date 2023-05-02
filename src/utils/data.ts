@@ -107,6 +107,12 @@ export const menCharacters = [
     url: "../assets/characters/men/house.png",
     bio: "My cane is a conversation starter. Want to know the story behind it?",
   },
+  {
+    id: 18,
+    name: "Theodore Lasso",
+    url: "../assets/characters/men/ted.png",
+    bio: "American football coach turned British soccer coach. I believe in the power of positivity, teamwork, and a good cup of tea.",
+  },
 ];
 
 export const womenCharacter = [
